@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <!--Dashboard LOGO-->
-            <h1>Dashboard</h1>
+            <h1 class="sidebar-title">Dashboard</h1>
 
-            <nav>
+            <nav class="left-nav">
                 <ul>
                     <li>Home</li>
                     <li>Profile</li>
@@ -26,7 +26,7 @@
                 </ul>
             </nav>
 
-            <nav>
+            <nav class="left-nav">
                 <ul>
                     <li>Settings</li>
                     <li>Support</li>
@@ -36,117 +36,157 @@
         </aside>
 
         <header class="header">
-            <search>
+            <search class="search-bar">
                 <form action="" method="">
-                    <input type="text">
+                    <input type="text" size="100">
                 </form>
             </search>
         
-            <div>
+            <div class="admin-top-profile">
                 <img src="" alt="Morgan Oakley profile picture">
                 <h4>Morgan Oakley</h3>
             </div>
 
-            <div>
+            <div class="admin-welcome">
                 <img src="" alt="Morgan Oakley profile picture">
-                <h1><span>Hi there,</span>Morgan Oakley (@morgan)</h1>
+                <h1><span>Hi there,</span><br>Morgan Oakley (@morgan)</h1>
             </div>
 
 
-            <nav>
+            <nav class="header-buttons">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
             </nav>
         </header>
 
-        <main>
-            <h2>Your Projects</h2>
+        <main class="main">
 
-            <section>
-                <h3>Super Cool Project</h3>
-                <p>Set tempus ut lacus ut scelefisque. Suspendisse sollicitudin nibh erat, id facikisis felis accsumsan nos.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
-            </section>
+            <h2 class="projects-title">Your Projects</h2>
+            
+            <section class="main-left"> 
+            
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Super Cool Project</h3>
+                        <p>Set tempus ut lacus ut scelefisque. Suspendisse sollicitudin nibh erat, id facikisis felis accsumsan nos.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>
+                    </section>
+                </div>
 
-            <section>
-                <h3>Less Cool Project</h3>
-                <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisaque sed dolor tincidunt consectetur spaien et, fecilisis dolor. Duls sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
-            </section>
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Less Cool Project</h3>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisaque sed dolor tincidunt consectetur spaien et, fecilisis dolor. Duls sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>
+                    </section>
+                </div>
 
-            <section>
-                <h3>Impossible App</h3>
-                <p>In hac habtiasse platea dictumst. Vivamus dictum rutrum arcu, a placederat velit sagittis id.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
-            </section>
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Impossible App</h3>
+                        <p>In hac habtiasse platea dictumst. Vivamus dictum rutrum arcu, a placederat velit sagittis id.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>                    
+                    </section>
 
-            <section>
-                <h3>Easy Peasy App</h3>
-                <p>Etiam cursus eros ac effictur fingilla. Vestibullum dignissum uma eget accumsan aliquam. Curabitur giggnisim nisi in toroto commodo, ac bibenmdum magna tincifunt.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
-            </section>
+                </div>
 
-            <section>
-                <h3>Ad blocker</h3>
-                <p>Quisque eget ritrum nisle. Nam qugue justo, curus vitare metus vel, pharetra hendredit felis. Aliquamd sed malesuado eros.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
-            </section>
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Easy Peasy App</h3>
+                        <p>Etiam cursus eros ac effictur fingilla. Vestibullum dignissum uma eget accumsan aliquam. Curabitur giggnisim nisi in toroto commodo, ac bibenmdum magna tincifunt.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>
+                    </section>  
+                </div>
 
-            <section>
-                <h3>Money maker</h3>
-                <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amex ex. Pellentesque mollis sec sem vel aliquam.</p>
-                <button>LOGO</button>
-                <button>LOGO</button>
-                <button>LOGO</button>
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Ad blocker</h3>
+                        <p>Quisque eget ritrum nisle. Nam qugue justo, curus vitare metus vel, pharetra hendredit felis. Aliquamd sed malesuado eros.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="main-cards">
+                    <div class="main-cards-left"></div>
+                    <section class="main-cards-right">
+                        <h3>Money maker</h3>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amex ex. Pellentesque mollis sec sem vel aliquam.</p>
+                        <div>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                            <button>LOGO</button>
+                        </div>
+                    </section>
+                </div>
             </section>
             
-            <h2>Announcements</h2>
-            <div>
-                <section>
-                    <h3>Site maintenance</h3>
-                    <p>Vestibulum condimentum telelus lacus in accumsan elit maximus ac. Donc ac hendrerit sodales congue...</p>
-                </section>
+            <h2 class="announcements-title">Announcements</h2>
+
+            <section class="main-right">
+                <div class="main-right-announcements">
+                    <section>
+                        <h3>Site maintenance</h3>
+                        <p>Vestibulum condimentum telelus lacus in accumsan elit maximus ac. Donc ac hendrerit sodales congue...</p>
+                    </section>
+
+                    <section>
+                        <h3>Community Share Day</h3>
+                        <p>Nam vel lectus tincidnunt, rutrum nulla eru,m ornare libero. Aliquam dictum accumsan portitor...</p>
+                    </section>
+                
 
                 <section>
-                    <h3>Community Share Day</h3>
-                    <p>Nam vel lectus tincidnunt, rutrum nulla eru,m ornare libero. Aliquam dictum accumsan portitor...</p>
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Phasellus effcitur nisi eget elit consectetur eget condimentum ante acutor. Cras fingilla sagittis sem in mattis...</p>
                 </section>
-            </div>
+                </div>
 
-            <section>
-                <h3>Updated Privacy Policy</h3>
-                <p>Phasellus effcitur nisi eget elit consectetur eget condimentum ante acutor. Cras fingilla sagittis sem in mattis...</p>
+                <h2>Trending</h2>
+
+                <section class="main-right-trending">
+                    <ul>
+                        <li><img src="" alt="a dog in blue background">
+                            <a>&#64;tegan</a></li>
+                        <span>World Peace Builder</span>
+                        <li><img src="" alt="a cat in yellow backgroung">
+                            <a>&#64;morgan</a></li>
+                        <span>Super Cool Project</span>
+                        <li><img src="" alt="profile picture">
+                            <a>&#64;kendall</a></li>
+                        <span>Life Changing App</span>
+                        <li><img src="" alt="profile picture">
+                            <a>&#64;alex</a></li>
+                        <span>No Traffic Maker</span>
+                    </ul>
+                </section>
             </section>
 
-
-            <h2>Trending</h2>
-            <section>
-                <ul>
-                    <li><img src="" alt="a dog in blue background">
-                        <a>&#64;tegan</a></li>
-                    <span>World Peace Builder</span>
-                    <li><img src="" alt="a cat in yellow backgroung">
-                        <a>&#64;morgan</a></li>
-                    <span>Super Cool Project</span>
-                    <li><img src="" alt="profile picture">
-                        <a>&#64;kendall</a></li>
-                    <span>Life Changing App</span>
-                    <li><img src="" alt="profile picture">
-                        <a>&#64;alex</a></li>
-                    <span>No Traffic Maker</span>
-                </ul>
-            </section>
         </main>
     </div>
 </body>

@@ -7,21 +7,44 @@ html {
     box-sizing: inherit;
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 250px 4fr;
+}
+
+li {
+    list-style-type: none;
+}
+
+span {
+    font-size: 16px;
 }
 
 /* SIDEBAR */
 
+.sidebar-title {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 20px;
+}
+
 .sidebar {
+    background: rgb(101, 85, 173);
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+}
+
+.left-nav {
+    color:white;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2em;
 }
 
 /* HEADER */
@@ -42,6 +65,106 @@ form::before {
     line-height: 20px;
 }
 
+input[type=text] {
+    background: rgb(255, 249, 201);
+    height: 1.8em;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.admin-top-profile,
+.admin-welcome {
+    display: flex;
+    align-items: center;
+}
+
 /* MAIN CONTENT */
 
+.main {
+    background: rgb(187, 172, 250);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
 
+.projects-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 20px;
+}
+
+.announcements-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 20px;
+}
+
+.main-left {
+    grid-column: 1 / 2;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+.main-cards {
+    display: inline-grid;
+    grid-template-columns: 10px 1fr;
+    width: 30vw;
+    height: 250px;
+    justify-content: center;
+}
+
+div.main-cards-left {
+    grid-column: 1 / 2;
+    background: rgb(173, 165, 102);
+    border-radius: 30px 0 0 30px;
+
+}
+
+.main-cards-right {
+    grid-column: 2 / 3;
+    background: white;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.main-right {
+    grid-column: 2 / 3;
+    margin: 20px;
+}
+
+.main-right-announcements {
+    height: min-content;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.main-right-trending {
+    height: min-content;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px
+}
+.header-buttons button{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    background: rgb(101, 85, 173);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 30px;
+}
