@@ -13,7 +13,7 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 250px 4fr;
     grid-template-rows: 250px 4fr;
 }
 
@@ -25,13 +25,21 @@ span {
     font-size: 16px;
 }
 
-/* SIDEBAR */
+/* ------------------------- SIDEBAR ----------------------------- */
 
 .sidebar-title {
     color: white;
     font-size: 1.8em;
     font-weight: 700;
     margin: 20px;
+}
+
+.sidebar-title::before {
+    content: url(assets/icons/view-dashboard.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .sidebar {
@@ -44,10 +52,27 @@ span {
     color:white;
     font-size: 1.5em;
     font-weight: 700;
-    line-height: 2em;
+    line-height: 3em;
 }
 
-/* HEADER */
+.nav-list-1 {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.nav-list-1 li {
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list-1 img {
+    grid-column: 1/2;
+    align-self: center;
+    margin-right: 5px;
+}
+
+/* ---------------------- HEADER --------------------*/
 
 .header {
     grid-row: 1 / 2;
@@ -57,12 +82,12 @@ span {
 }
 
 form::before {
-    content: url(./assets/magnify.svg);
+    content: url(./assets/icons/magnify.svg);
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    line-height: 20px;
+    width: 30px;
+    height: 30px;
+    /* align-self: center;     */
+    line-height: 30px;
 }
 
 input[type=text] {
@@ -70,6 +95,9 @@ input[type=text] {
     height: 1.8em;
     border-color: white;
     border-radius: 10px;
+    height: 30px;
+    width: 50vw;
+    margin-top: 10px;
 }
 
 .admin-top-profile,
@@ -78,12 +106,26 @@ input[type=text] {
     align-items: center;
 }
 
-/* MAIN CONTENT */
+.admin-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.bigger-admin-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+/* -------------- MAIN CONTENT ------------------ */
 
 .main {
     background: rgb(187, 172, 250);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 300px;
     grid-template-rows: 50px 1fr;
 }
 
@@ -106,8 +148,6 @@ input[type=text] {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
-
 
 .main-cards {
     display: inline-grid;
@@ -140,7 +180,7 @@ div.main-cards-left {
 .main-right-announcements {
     height: min-content;
     background: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
 
 }
@@ -148,7 +188,7 @@ div.main-cards-left {
 .main-right-trending {
     height: min-content;
     background: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
 }
 
