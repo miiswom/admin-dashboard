@@ -13,8 +13,8 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 250px 4fr;
-    grid-template-rows: 250px 4fr;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 li {
@@ -29,7 +29,7 @@ span {
 
 .sidebar-title {
     color: white;
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: 700;
     margin: 20px;
 }
@@ -50,23 +50,25 @@ span {
 
 .left-nav {
     color:white;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     line-height: 3em;
 }
 
-.nav-list-1 {
+.nav-list-1,
+.nav-list-2 {
     display: grid;
     grid-template-columns: 30px 1fr;
 }
 
-.nav-list-1 li {
+.nav-list-1 li .li-li {
     grid-column: 2 / 3;
     justify-content: center;
     align-items: center;
 }
 
-.nav-list-1 img {
+.nav-list-1 img,
+.nav-list-2 img {
     grid-column: 1/2;
     align-self: center;
     margin-right: 5px;
@@ -125,7 +127,7 @@ input[type=text] {
 .main {
     background: rgb(187, 172, 250);
     display: grid;
-    grid-template-columns: 2fr 300px;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 50px 1fr;
 }
 
@@ -144,17 +146,21 @@ input[type=text] {
 .main-left {
     grid-column: 1 / 2;
     display: grid;
-    margin: 20px;
+    /* margin: 10px; */
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 5px;
+    margin: 0;
 }
 
 .main-cards {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 10px 1fr;
-    width: 30vw;
+    max-width: 30vw;
     height: 250px;
     justify-content: center;
+    margin: 10px;
+
 }
 
 div.main-cards-left {
@@ -167,14 +173,14 @@ div.main-cards-left {
 .main-cards-right {
     grid-column: 2 / 3;
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 0 10px 10px 0;
 
 }
 
 .main-right {
     grid-column: 2 / 3;
-    margin: 20px;
+    margin: 10px;
 }
 
 .main-right-announcements {
@@ -182,7 +188,14 @@ div.main-cards-left {
     background: white;
     padding: 40px;
     border-radius: 10px;
+}
 
+.main-right-announcements section:first-child {
+    border-bottom: 1px solid gray;
+}
+
+.main-right-announcements section:last-child {
+    border-top: 1px solid gray;
 }
 
 .main-right-trending {
